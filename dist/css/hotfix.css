@@ -1,0 +1,46 @@
+/* ===== Mobile overflow & image sanity ===== */
+html, body { max-width: 100%; overflow-x: hidden; }
+* { box-sizing: border-box; }
+
+/* Hindari 100vw + padding memicu horizontal scroll */
+.w-screen, [class*="w-screen"] { width: 100%; }
+
+/* Gambar & media fleksibel */
+img, video, canvas, svg { max-width: 100%; height: auto; }
+
+/* Figure / gambar di grid agar tidak "meluber" */
+figure, picture { display: block; max-width: 100%; }
+
+/* Safe container */
+.container, .wrap, .section { max-width: 100%; overflow-x: clip; }
+
+/* Tailwind util override ringan ketika ada absolute yang keluar layar */
+.overflow-x-clip { overflow-x: clip; }
+
+/* Cegah transform yang bikin overflow saat animasi */
+[data-animate], .animated, .parallax {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Carousel/slider umum (Preline/Swiper/HS) */
+[class*="carousel"], [class*="swiper"], [class*="hs-carousel"] {
+  overflow: hidden; /* jail the slides */
+}
+
+/* Background fixed berat di mobile → jadikan auto */
+@media (max-width: 767.98px) {
+  .bg-fixed { background-attachment: scroll !important; }
+}
+
+/* Teks panjang tidak memecah layout */
+.wrap-words { overflow-wrap: anywhere; word-break: break-word; }
+
+/* Elemen yang sering jadi biang overflow */
+pre, code { white-space: pre-wrap; word-break: break-word; }
+
+/* Table responsif standar */
+.table-wrap { width: 100%; overflow-x: auto; }
+
+/* Jika ada section tinggi pakai vh → jinakkan di iOS */
+.min-h-screen, [class*="min-h-screen"] { min-height: 100svh; }
