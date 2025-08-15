@@ -18,6 +18,7 @@
 <!-- AOS ANIMATE S -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!-- AOS ANIMATE E -->
+<style>img,video{max-width:100%;height:auto}</style>
 
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -27,14 +28,14 @@
 }
     </script>
 </head> 
-<body>
+<body class="overflow-x-hidden">
     <!-- Header Start  -->
     <header class="absolute top-0
     left-0 w-full flex items-center z-10">
 <div class="container">
     <div class="flex items-center justify-between relative">
         <div class="px-4">
-            <link  link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></link>
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></link>
             <a href="#home" class="font-bold text-lg text-primary block py-6">Home <i class="fa-solid fa-house"></i></a>
         </div>
         <div class="flex items-center px-4">
@@ -43,7 +44,7 @@
                 <span class="hamburger-line transition duration-300 ease-in-out"></span>
                 <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
             </button>
-            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w[250px] lg:w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] lg:w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 
             lg:dark:bg-transparent">
                 <ul class="block lg:flex">
                     <li class="group">
@@ -90,7 +91,7 @@
 <!-- hero section Start -->
 <section id="home" class="pt-36 dark:bg-slate-800">
 <div class="container">
-    <div class="flex flex-wrap tranform translate-y-[-10px]">
+    <div class="flex flex-wrap transform translate-y-[-10px]">
         <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary dark:text-primary md:text-xl "  >Hallo Everyone👋, <u class="text-primary dark:text-orange-300 ">it's Me!! </u> <span1 class="block font-bold text-dark dark:text-white text-4xl mt-1 lg:text-5xl hover:text-primary dark:hover:text-primary">Muhamad <span class=" font-bold text-yellow-600 dark:text-yellow-600 text-4xl lg:text-5xl hover:text-primary dark:hover:text-primary"></span> </span1></h1>
             <h2 class="font-medium text-Secondary dark:text-slate-400 text-lg mb-5" >Video Editor, Desain Grafis, Storyteller and <span class="text-lime-700" >Programmer</span></h2>
@@ -173,7 +174,7 @@
 <!-- Portofolio section Start  -->
 <section id="Portofolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-700">
     <div class="container">
-        <div class="w full px-4">
+        <div class="w-full px-4">
             <div class="max-w-xl mx-auto text-center mb-16">
                 <h4 class="font-semibold text-lg text-primary  mb-2" data-aos="fade-in">Portofolio</h4>
                 <h2 class="font-bold text-dark text-3xl mb-4  sm:text-4xl lg:text-5xl  dark:text-white " data-aos="fade-up" data-aos-delay="200">My <span class="font-bold text-yellow-600 text-3xl mb-4  sm:text-4xl lg:text-5xl  dark:text-yellow-600 " data-aos="fade-up" data-aos-delay="200">Project</span></h2>
@@ -184,7 +185,7 @@
         <div class="w-full max-w-full h-auto px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
         <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden ">
-            <a href="https://heyyarztreppo.github.io/TheoryBlack-Hole/"> <img src="dist/image/My Portofolio/Project - Web Theory of Everything.png" alt="Project lalu" width="w-full" data-aos="flip-up"></a>
+            <a href="https://heyyarztreppo.github.io/TheoryBlack-Hole/"> <img src="dist/image/My Portofolio/Project - Web Theory of Everything.png" alt="Project lalu"  data-aos="flip-up" class="w-full"></a>
          </div>
          <h3 class="font-semibold text-xl text-dark mt-5 mb-3  dark:text-primary" data-aos="fade-in">Project - Web Theory of Everything</h3>
          <p class="font-medium text-base text-Secondary  dark:text-white " data-aos="fade-in"  data-aos-delay="200">Foto diatas merupakan project pertama yang saya unggah di GitHub dan saya bagikan melalui Instagram Pribadi, project ini saya buat karena terinspirasi dari film Stephen Hawking yang menceritakan tentang sains dan alam semesta, tetapi di dalam web ini lebih berfokus pada pembahasan mengenai black hole. </p>
@@ -192,7 +193,7 @@
        <!-- p2 -->
         <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
-             <img src="dist/image/My Portofolio/Desain Baju Outing Class.png" alt="Project Portofolio Tailwind" width="w-full" data-aos="flip-up" data-aos-delay="100">
+             <img src="dist/image/My Portofolio/Desain Baju Outing Class.png" alt="Project Portofolio Tailwind"  data-aos="flip-up" data-aos-delay="100" class="w-full">
          </div>
          <h3 class="font-semibold text-xl text-dark mt-5 mb-3  dark:text-primary" data-aos="fade-in"  data-aos-delay="100">Desain Baju Outing Class</h3>
          <p class="font-medium text-base  dark:text-white  text-Secondary" data-aos="fade-in"  data-aos-delay="300">Foto di atas menampilkan desain baju yang saya edit sendiri, berdasarkan hasil revisi yang telah disepakati bersama teman-teman sekelas. Desain ini dibuat khusus untuk kegiatan study tour ke Depok, Jogja, Malang, Bali, dan Bromo.</p>
@@ -200,7 +201,7 @@
        <!-- p3 -->
         <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
-             <img src="dist/image/My Portofolio/My Set-up Laptop Dual Monitor.png" alt="Project Set-Up kecil-kecilan" width="w-full" data-aos="flip-up" data-aos-delay="200">
+             <img src="dist/image/My Portofolio/My Set-up Laptop Dual Monitor.png" alt="Project Set-Up kecil-kecilan"  data-aos="flip-up" data-aos-delay="200" class="w-full">
          </div>
          <h3 class="font-semibold text-xl text-dark mt-5 mb-3  dark:text-primary" data-aos="fade-in"  data-aos-delay="200">My Set-up Laptop Dual Monitor</h3>
          <p class="font-medium text-base  dark:text-white  text-Secondary" data-aos="fade-in"  data-aos-delay="400">Foto diatas merupakan update-an dari Set-up yang aku gunakan untuk belajar. Untuk monitor pertama aku menggunakan Asus Vivobook Go E1404fa dengan spesifikasi Ram 8 GB dan Processor AMD Ryzen 5. Lalu untuk monitor kedua aku menggunakan Laptop Acer Aspire 3 dengan spesifikasi Ram bawaan 4 GB DDR4, processor AMD A4, penyimpanan SSD Joint, & Keyboard Mechanical RedDragon 60%.</p>
@@ -208,7 +209,7 @@
        <!-- p4 -->
         <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
-              <a href="https://www.youtube.com/@hyArzt"><img src="dist/image/My Portofolio/Project Creating New logo.png" alt="Project Set-Up kecil-kecilan" width="w-full" data-aos="flip-up" data-aos-delay="200"></a>
+              <a href="https://www.youtube.com/@hyArzt"><img src="dist/image/My Portofolio/Project Creating New logo.png" alt="Project Set-Up kecil-kecilan"  data-aos="flip-up" data-aos-delay="200" class="w-full"></a>
          </div>
          <h3 class="font-semibold text-xl text-dark mt-5 mb-3  dark:text-primary" data-aos="fade-in"  data-aos-delay="300">Project Creating New logo</h3>
          <p class="font-medium text-base  dark:text-white  text-Secondary" data-aos="fade-in"  data-aos-delay="500">Foto di atas merupakan hasil pembuatan logo baru sebagai bagian dari proses rebranding dan pembentukan personal branding. Logo ini akan digunakan sebagai foto profil di akun YouTube saya, sekaligus menjadi elemen identitas visual pada setiap karya yang saya buat, sehingga mencerminkan karakter dan ciri khas pribadi saya.</p>
@@ -216,7 +217,7 @@
        <!-- p5 -->
         <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
-             <img src="dist/image/My Portofolio/Project Music Audio Dubbing Theater.png" alt="Project Set-Up kecil-kecilan" width="w-full" data-aos="flip-up" data-aos-delay="200">
+             <img src="dist/image/My Portofolio/Project Music Audio Dubbing Theater.png" alt="Project Set-Up kecil-kecilan"  data-aos="flip-up" data-aos-delay="200" class="w-full">
          </div>
          <h3 class="font-semibold text-xl text-dark mt-5 mb-3  dark:text-primary" data-aos="fade-in"  data-aos-delay="400">Project Music Audio Dubbing Theater</h3>
          <p class="font-medium text-base  dark:text-white  text-Secondary" data-aos="fade-in"  data-aos-delay="600">Foto di atas merupakan poster peluncuran Music Audio Dubbing untuk Theater Case Number 321. Audio tersebut diproduksi dan direkam di hyArzt`Production atau lebih tepatnya saya pribadi yang menghandle dengan bantuan rekan tim operator kelas. Bersama-sama, kami menggarap proses pembuatan Music Audio Dubbing ini hingga siap untuk dirilis. Oiya Audio tersebut direkam dan dirilis pada tahun 2024 lalu di publish di YouTube pada tahun 2025 ©.</p>
@@ -228,7 +229,7 @@
        <!-- p6 -->
         <div class="mb-12 p-4 md:w-1/2">
             <div class="rounded-md shadow-md overflow-hidden">
-             <img src="dist/image/My Portofolio/Sumber Belajar Coding.png" alt="Panutan Belajar Coding" width="w-full" data-aos="flip-up" data-aos-delay="300">
+             <img src="dist/image/My Portofolio/Sumber Belajar Coding.png" alt="Panutan Belajar Coding"  data-aos="flip-up" data-aos-delay="300" class="w-full">
          </div>
          <h3 class="font-semibold text-xl text-dark mt-5 mb-3  dark:text-primary" data-aos="fade-in"  data-aos-delay="500">Sumber Belajar Coding</h3>
          <p class="font-medium text-base  dark:text-white  text-Secondary" data-aos="fade-in"  data-aos-delay="700">Nah, ini dia channel YouTube yang paling sering saya tonton saat belajar coding. Meskipun ada banyak channel lain yang membahas topik serupa, saya merasa lebih nyaman dan sangat terinspirasi ketika belajar melalui channel ini karena pembahasannya lebih mudah dipahami dan pembawaannya terkesan lebih santai.
@@ -261,25 +262,22 @@
 
         <div class="w-full max-w-full h-auto px-4">
             <div class="flex flex-wrap items-center justify-center">
-                <!-- a1 -->
-                <a href="https://code.visualstudio.com/download" class="max-w-[150px] mx-4 py-4  opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="zoom-in-up"> <img src="dist/image/software/vscode.png" alt="vscode">
-                </a>
-               
-                <!-- a2 -->
-                <a href="https://www.microsoft.com/id-id/microsoft-365/microsoft-office" class="max-w-[150px] mx-4 py-4  opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"data-aos="zoom-in-up" data-aos-delay="100"> <img src="dist/image/software/office.png" alt="office">   
-                
-                    <!-- a3 --> 
-                <a href="https://www.canva.com/id_id/unduh/windows/" class="max-w-[150px] mx-4 py-4  opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"data-aos="zoom-in-up" data-aos-delay="200"> <img src="dist/image/software/canva.png" alt="canva">
-                
-                    <!-- a4 -->
-                <a href="https://www.adobe.com/downloads.html" class="max-w-[150px] mx-4 py-4  opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="zoom-in-up" data-aos-delay="300"> <img src="dist/image/software/adobe.png" alt="adobe">
-
-                    <!-- a5 -->
-                <a href="https://www.capcut.com/id-id" class="max-w-[150px] mx-4 py-4  opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="zoom-in-up" data-aos-delay="400"> <img src="dist/image/software/Logo Capcut Fix.png" alt="Capcut">
-                </a>
-                </a>
-                </a>
-            </div>
+    <a href="https://code.visualstudio.com/download" class="max-w-[150px] mx-4 py-4 opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="zoom-in-up">
+      <img src="dist/image/software/vscode.png" alt="vscode">
+    </a>
+    <a href="https://www.microsoft.com/id-id/microsoft-365/microsoft-office" class="max-w-[150px] mx-4 py-4 opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="zoom-in-up" data-aos-delay="100">
+      <img src="dist/image/software/office.png" alt="office">
+    </a>
+    <a href="https://www.canva.com/id_id/unduh/windows/" class="max-w-[150px] mx-4 py-4 opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="zoom-in-up" data-aos-delay="200">
+      <img src="dist/image/software/canva.png" alt="canva">
+    </a>
+    <a href="https://www.adobe.com/downloads.html" class="max-w-[150px] mx-4 py-4 opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="zoom-in-up" data-aos-delay="300">
+      <img src="dist/image/software/adobe.png" alt="adobe">
+    </a>
+    <a href="https://www.capcut.com/id-id" class="max-w-[150px] mx-4 py-4 opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8" data-aos="zoom-in-up" data-aos-delay="400">
+      <img src="dist/image/software/Logo Capcut Fix.png" alt="Capcut">
+    </a>
+    </div>
         </div>
     </div>
 </section>
@@ -358,7 +356,7 @@
       <div class="flex flex-wrap xl:w-10/12 xl:mx-auto">
 
         <!-- Carousel 1 -->
-        <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:1/3">
+        <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:w-1/3">
           <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden mb-10 relative" data-aos="zoom-in" data-aos-delay="400">
             <div id="carousel1" class="carousel relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 shadow-lg">
               <div class="carousel-track">
@@ -386,7 +384,7 @@
         </div>
 
         <!-- Carousel 2 -->
-        <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:1/3">
+        <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:w-1/3">
           <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden mb-10 relative" data-aos="zoom-in" data-aos-delay="400">
             <div id="carousel2" class="carousel relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 shadow-lg">
               <div class="carousel-track">
@@ -414,7 +412,7 @@
         </div>
 
         <!-- Carousel 3 -->
-        <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:1/3">
+        <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:w-1/3">
           <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden mb-10 relative" data-aos="zoom-in" data-aos-delay="500">
             <div id="carousel3" class="carousel relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 shadow-lg">
               <div class="carousel-track">
@@ -441,7 +439,7 @@
         </div>
 
         <!-- Carousel 4 -->
-        <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:1/3">
+        <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:w-1/3">
           <div class="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden mb-10 relative" data-aos="zoom-in" data-aos-delay="500">
             <div id="carousel4" class="carousel relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 shadow-lg">
               <div class="carousel-track">
@@ -590,7 +588,7 @@
         </div>
         <!-- Gambar 1 -->
         <div class="flex flex-wrap xl:w-10/12 xl:mx-auto">
-            <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:1/3">
+            <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:w-1/3">
                 <div class="bg-white dark:bg-slate-600 rounded-xl shadow-lg overflow-hidden mb-10" data-aos="fade-right" data-aos-delay="300">
                     <img src="dist/image/CV FIX/My CV.png" alt="CV" class="w-full" />
                     <div class="py-8 px-6">
@@ -603,7 +601,7 @@
                 </div>
             </div>
          <!-- Gambar 2 -->
-            <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:1/3">
+            <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:w-1/3">
                 <div class="bg-white dark:bg-slate-600 rounded-xl shadow-lg overflow-hidden mb-10" data-aos="fade-left" data-aos-delay="400">
                     <img src="dist/image/CV FIX/Web Cover.png" alt="CV" class="w-full" />
                     <div class="py-8 px-6">
@@ -616,7 +614,7 @@
                 </div>
             </div>
          <!-- Gambar 3 -->
-            <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:1/3">
+            <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:w-1/3">
                 <div class="bg-white dark:bg-slate-600 rounded-xl shadow-lg overflow-hidden mb-10" data-aos="fade-right" data-aos-delay="500">
                     <img src="dist/image/CV FIX/Sertifikat Lomba Foto.png" alt="CV" class="w-full" />
                     <div class="py-8 px-6">
@@ -629,7 +627,7 @@
                 </div>
             </div>
          <!-- Gambar 4 -->
-            <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:1/3">
+            <div class="w-full max-w-full h-auto px-4 lg:w-1/2 xl:w-1/3">
                 <div class="bg-white dark:bg-slate-600 rounded-xl shadow-lg overflow-hidden mb-10" data-aos="fade-left" data-aos-delay="600">
                     <img src="dist/image/CV FIX/Sertifikat OSIS.png" alt="CV" class="w-full" />
                     <div class="py-8 px-6">
@@ -676,7 +674,7 @@
             <label for="Pesan" class="text-base font-bold text-primary dark:text-white">Pesan</label>
             <textarea type="text" name="message" id="message" placeholder="Your Message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary dark:text-dark h-32"></textarea>
         </div>
-        <div class="w full px-4"data-aos="zoom-in" data-aos-delay="500">
+        <div class="w-full px-4"data-aos="zoom-in" data-aos-delay="500">
             <button class="text-base font-semibold text-white bg-primary dark:text-white py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
         </div>
         </div>
@@ -800,7 +798,7 @@
 <!-- footer End -->
 
 <!-- Back To Top Start -->
-<a href="#home" class="h-10 w-8 bg-primary rounded-full fixed  item-center justify-center z-[9999] bottom-4 right-4 p-4 hover:animate-bounce hidden dark:text-white" id="to-top" style="bottom: calc(env(safe-area-inset-bottom, 0px) + 1.5rem); 
+<a href="#home" class="h-10 w-8 bg-primary rounded-full fixed  items-center justify-center z-[9999] bottom-4 right-4 p-4 hover:animate-bounce hidden dark:text-white" id="to-top" style="bottom: calc(env(safe-area-inset-bottom, 0px) + 1.5rem); 
           right: calc(env(safe-area-inset-right, 0px) + 1.5rem);
           display: none;">
     <i class="fa-solid fa-sort-up"></i>
